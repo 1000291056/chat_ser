@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - chat@localhost" uuid="4aeaef5f-361f-4754-98c8-80c52e2a8991">
+    <database-info product="MySQL" version="5.7.13-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+      <schema id="1" name="chat">
+        <visible>1</visible>
+      </schema>
+      <schema id="2" name="information_schema"/>
+      <schema id="3" name="mysql"/>
+      <schema id="4" name="performance_schema"/>
+      <schema id="5" name="sys"/>
+      <table id="6" parent="1" name="user"/>
+      <column id="7" parent="6" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="8" parent="6" name="name">
+        <mandatory>1</mandatory>
+        <data-type>varchar(256)|0</data-type>
+      </column>
+      <column id="9" parent="6" name="password">
+        <mandatory>1</mandatory>
+        <data-type>varchar(6)|0</data-type>
+      </column>
+      <column id="10" parent="6" name="innetAddress">
+        <data-type>varchar(256)|0</data-type>
+      </column>
+      <key id="11" parent="6" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+</component>
